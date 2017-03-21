@@ -1,7 +1,7 @@
 ---
 title: my core
 date: 2017-02-20 23:29:49
-tags:
+tags: Javascript
 ---
 ### Q & A
 Q:vue-router用的是哪种模式？histroy or hash?
