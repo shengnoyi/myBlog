@@ -56,3 +56,4 @@ Q:`wx.checkSession()`检测的登录态的作用范围是什么？是仅限于�
 - 小程序不支持Promise,可以在网上找支持Promise的polyfill（我用的是es6-promise）
 - **2017.3.27 微信把之前移除的Promise弄回来了，并且增添了大量的es6的特性，我的天！！！这不坑爹吗？只好把es6-promise.min.js删掉，并在引用过的地方删去引用，嗯，少了一个文件也不错**
 - 目前遇到一个问题，不知道怎么像在浏览器上一样生成二维码，由于小程序没有BOM,所以直接从网上copy是不行的，看能不能在网上找一个改改
+- 二维码问题已解决，需要使用微信小程序提供的Canvas进行修改，我使用的QrCode是[https://github.com/davidshimjs/qrcodejs/](https://github.com/davidshimjs/qrcodejs/)
