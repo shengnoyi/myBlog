@@ -3,7 +3,7 @@ title: install node-sass
 date: 2017-03-31 17:12:50
 tags: Vue
 ---
-Window 7环境安装node-sass遇到gyp error，提示没有安装python
+最近在使用vue单文件组件功能，需要在Window 7环境安装node-sass，遇到gyp error，提示没有安装python
 
 解决方法：  
 `npm install -g node-gyp`  
