@@ -25,7 +25,8 @@ hexo: command not found
 
 如果只是使用 `npm` 安装的话，hexo 是可以正常安装的。
 
-在 Google 上搜索后发现是在 Ubuntu 下手动安装 `yarn`，使用 `nvm` 才会出现的问题，原因可能是 node 没有找到 yarn 的命令行位置，使用下列命令解决：
+### 探索
+在 Google 上搜索后发现是在 Ubuntu 下手动安装 `yarn`，使用 `nvm` 才会出现的问题，原因可能是 node 没有找到 yarn 的命令行位置，在命令行执行下列**命令（关键）**：
 ```
 export PATH="$PATH:$(yarn global bin)"
 ```
@@ -36,4 +37,14 @@ yarn global remove hexo
 yarn global remove hexo-cli
 yarn global add hexo
 ```
-成功。
+
+终于成功运行了 `hexo`，不过当我关掉 terminal 之后发现又是
+```
+hexo: command not found
+```
+难道每次都要输入这个命令才能使用 `hexo`？
+
+不不不，我们只需要把命令加在 `~/.bashrc` 文件的末尾，那么每次启动 terminal 的时候就会自动运行这行命令脚本。
+
+
+这下子才算大功告成了。
